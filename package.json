@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate-images": "npx tsx scripts/generate-images.mts"
   },
   "dependencies": {
     "next": "16.2.9",
