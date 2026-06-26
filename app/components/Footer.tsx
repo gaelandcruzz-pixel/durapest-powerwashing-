@@ -36,16 +36,16 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-5">
-              Toronto&apos;s trusted powerwashing professionals. Part of the Durapest family of services since 2014.
+              Toronto&apos;s trusted powerwashing professionals. Part of the Durapest family of services since 2017.
             </p>
             <a
-              href="tel:+14161234567"
+              href="tel:+19057826332"
               className="inline-flex items-center gap-2 text-brand-red hover:text-white text-sm font-medium transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              (416) 123-4567
+              (905) 782-6332
             </a>
           </div>
 
@@ -89,8 +89,8 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <ul className="flex flex-col gap-3">
               <li>
-                <a href="tel:+14161234567" className="text-slate-400 hover:text-white text-sm transition-colors">
-                  (416) 123-4567
+                <a href="tel:+19057826332" className="text-slate-400 hover:text-white text-sm transition-colors">
+                  (905) 782-6332
                 </a>
               </li>
               <li>
