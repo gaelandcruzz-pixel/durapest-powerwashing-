@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="bg-black/90 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto scrollbar-none py-1.5">
-            <span className="text-slate-500 text-xs font-medium flex-shrink-0">Part of the Durapest Family</span>
+            <span className="text-brand-red text-xs font-bold uppercase tracking-wider flex-shrink-0">Part of the Durapest Family</span>
             <span className="text-white/20 text-xs select-none flex-shrink-0">·</span>
             {sisterLinks.map(({ label, href, active }, i) => (
               <span key={label} className="flex items-center gap-2 flex-shrink-0">
