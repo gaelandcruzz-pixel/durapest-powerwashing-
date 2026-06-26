@@ -48,15 +48,17 @@ export default function Navbar() {
       {/* Sister company bar */}
       <div className="bg-black/90 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-1 overflow-x-auto scrollbar-none py-1.5">
+          <div className="flex items-center gap-2 overflow-x-auto scrollbar-none py-1.5">
+            <span className="text-slate-500 text-xs font-medium flex-shrink-0">Part of the Durapest Family</span>
+            <span className="text-white/20 text-xs select-none flex-shrink-0">·</span>
             {sisterLinks.map(({ label, href, active }, i) => (
-              <span key={label} className="flex items-center gap-1 flex-shrink-0">
-                {i > 0 && <span className="text-white/20 text-xs select-none">|</span>}
+              <span key={label} className="flex items-center gap-2 flex-shrink-0">
+                {i > 0 && <span className="text-white/20 text-xs select-none">·</span>}
                 <a
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className={`text-xs px-2 py-0.5 rounded transition-colors ${
+                  className={`text-xs transition-colors ${
                     active
                       ? "text-brand-red font-semibold"
                       : "text-slate-400 hover:text-white"
