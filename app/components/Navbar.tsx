@@ -1,28 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-function DurapestLogo({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 220 100" className={className} aria-label="Durapest Powerwashing">
-      <ellipse cx="110" cy="50" rx="105" ry="44" fill="none" stroke="#dc2626" strokeWidth="6" />
-      <ellipse cx="110" cy="50" rx="97" ry="36" fill="none" stroke="#171717" strokeWidth="3.5" />
-      <ellipse cx="110" cy="50" rx="93" ry="32" fill="white" />
-      <text
-        x="110"
-        y="58"
-        textAnchor="middle"
-        fontFamily="Inter, Arial, sans-serif"
-        fontWeight="800"
-        fontSize="32"
-        fill="#dc2626"
-        letterSpacing="-0.5"
-      >
-        Durapest
-      </text>
-    </svg>
-  );
-}
+import Image from "next/image";
 
 const sisterLinks = [
   { label: "Pest Control & Wildlife Removal", href: "https://www.durapest.ca" },
@@ -46,7 +25,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Sister company bar */}
-      <div className="bg-black/90 backdrop-blur-sm border-b border-white/10">
+      <div className="bg-black border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto scrollbar-none py-1.5">
             <span className="text-brand-red text-xs font-bold uppercase tracking-wider flex-shrink-0">Part of the Durapest Family</span>
@@ -83,14 +62,21 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main nav */}
-      <div className="bg-brand-dark/97 backdrop-blur-sm shadow-lg">
+      {/* Main nav — white background matching junk removal site */}
+      <div className="bg-white shadow-md border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <a href="#" className="flex items-center gap-3">
-              <DurapestLogo className="h-10 w-auto" />
-              <span className="text-white font-bold text-base leading-tight hidden sm:block">
+              <Image
+                src="/logo.png"
+                alt="Durapest Powerwashing"
+                width={140}
+                height={66}
+                className="h-11 w-auto"
+                priority
+              />
+              <span className="text-brand-dark font-bold text-base leading-tight hidden sm:block">
                 Powerwashing
               </span>
             </a>
@@ -101,7 +87,7 @@ export default function Navbar() {
                 <a
                   key={label}
                   href={href}
-                  className="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                  className="text-gray-600 hover:text-brand-dark text-sm font-medium transition-colors"
                 >
                   {label}
                 </a>
@@ -118,7 +104,7 @@ export default function Navbar() {
 
             {/* Mobile hamburger */}
             <button
-              className="md:hidden text-white p-2"
+              className="md:hidden text-brand-dark p-2"
               onClick={() => setOpen(!open)}
               aria-label="Toggle menu"
             >
@@ -137,12 +123,12 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {open && (
-          <div className="md:hidden border-t border-white/10 px-4 py-4 flex flex-col gap-1">
+          <div className="md:hidden border-t border-gray-100 px-4 py-4 flex flex-col gap-1 bg-white">
             {navLinks.map(({ label, href }) => (
               <a
                 key={label}
                 href={href}
-                className="text-slate-300 hover:text-white text-sm font-medium py-2 border-b border-white/5"
+                className="text-gray-600 hover:text-brand-dark text-sm font-medium py-2 border-b border-gray-100"
                 onClick={() => setOpen(false)}
               >
                 {label}
@@ -151,7 +137,7 @@ export default function Navbar() {
 
             <a
               href="tel:+19057826332"
-              className="flex items-center gap-2 text-slate-300 hover:text-white text-sm font-medium py-2 border-b border-white/5"
+              className="flex items-center gap-2 text-gray-600 hover:text-brand-dark text-sm font-medium py-2 border-b border-gray-100"
             >
               <svg className="w-4 h-4 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -159,15 +145,15 @@ export default function Navbar() {
               (905) 782-6332
             </a>
 
-            <div className="pt-2 pb-1 border-b border-white/5 flex flex-col gap-2">
-              <p className="text-slate-500 text-xs uppercase tracking-wider">Durapest Family</p>
+            <div className="pt-2 pb-1 border-b border-gray-100 flex flex-col gap-2">
+              <p className="text-gray-400 text-xs uppercase tracking-wider">Durapest Family</p>
               {sisterLinks.filter(l => !l.active).map(({ label, href }) => (
                 <a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-white text-xs"
+                  className="text-gray-500 hover:text-brand-dark text-xs"
                   onClick={() => setOpen(false)}
                 >
                   {label}
