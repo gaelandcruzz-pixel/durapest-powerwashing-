@@ -69,7 +69,7 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#" className="flex items-center gap-3">
               <Image
-                src="/logo.png"
+                src="/images/logo.png"
                 alt="Durapest Powerwashing"
                 width={140}
                 height={66}
