@@ -64,10 +64,10 @@ export default function WhyUs() {
           <div className="mb-12 lg:mb-0">
             <span className="inline-block text-brand-red text-sm font-semibold uppercase tracking-widest mb-3">Why Choose Us</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark mb-6">
-              The Durapest Difference
+              The DuraWash Difference
             </h2>
             <p className="text-slate-500 text-lg leading-relaxed mb-8">
-              We started Durapest Powerwashing right here in Toronto because we saw too many homeowners getting charged full price for mediocre results. Our team uses commercial-grade equipment and takes the time to do the job right — every time.
+              We started DuraWash right here in Toronto because we saw too many homeowners getting charged full price for mediocre results. Our team uses commercial-grade equipment and takes the time to do the job right — every time.
             </p>
             <a
               href="#contact"

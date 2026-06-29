@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Durapest Powerwashing | Toronto's Premier Pressure Washing Service",
+  title: "DuraWash | Toronto's Premier Pressure Washing Service",
   description:
     "Professional powerwashing services in Toronto and the GTA. Driveways, decks, siding, roofs, and commercial properties. Get a free quote today.",
 };

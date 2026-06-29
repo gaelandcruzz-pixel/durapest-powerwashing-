@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="bg-black border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto scrollbar-none py-1.5">
-            <span className="text-brand-red text-xs font-bold uppercase tracking-wider flex-shrink-0">Part of the Durapest Family</span>
+            <span className="text-brand-red text-xs font-bold uppercase tracking-wider flex-shrink-0">Part of the Dura Group Family</span>
             <span className="text-white/20 text-xs select-none flex-shrink-0">·</span>
             {sisterLinks.map(({ label, href, active }, i) => (
               <span key={label} className="flex items-center gap-2 flex-shrink-0">
@@ -70,7 +70,7 @@ export default function Navbar() {
             <a href="#" className="flex items-center gap-3">
               <Image
                 src="/images/logo.png"
-                alt="Durapest Powerwashing"
+                alt="DuraWash"
                 width={140}
                 height={66}
                 className="h-11 w-auto"
@@ -146,7 +146,7 @@ export default function Navbar() {
             </a>
 
             <div className="pt-2 pb-1 border-b border-gray-100 flex flex-col gap-2">
-              <p className="text-gray-400 text-xs uppercase tracking-wider">Durapest Family</p>
+              <p className="text-gray-400 text-xs uppercase tracking-wider">Dura Group Family</p>
               {sisterLinks.filter(l => !l.active).map(({ label, href }) => (
                 <a
                   key={label}

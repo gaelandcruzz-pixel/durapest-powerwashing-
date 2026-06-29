@@ -1,4 +1,4 @@
-function DurapestOval() {
+function DuraWashOval() {
   return (
     <svg viewBox="0 0 220 100" className="h-12 w-auto" aria-hidden>
       <ellipse cx="110" cy="50" rx="105" ry="44" fill="none" stroke="#dc2626" strokeWidth="6" />
@@ -14,7 +14,7 @@ function DurapestOval() {
         fill="#dc2626"
         letterSpacing="-0.5"
       >
-        Durapest
+        DuraWash
       </text>
     </svg>
   );
@@ -30,13 +30,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <DurapestOval />
+              <DuraWashOval />
               <span className="text-white font-bold text-base leading-tight">
                 Powerwashing
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-5">
-              Toronto&apos;s trusted powerwashing professionals. Part of the Durapest family of services since 2017.
+              Toronto&apos;s trusted powerwashing professionals. Part of the Dura Group family of services since 2017.
             </p>
             <a
               href="tel:+19057826332"
@@ -118,7 +118,7 @@ export default function Footer() {
           <p className="text-slate-500 text-sm text-center">
             Part of the{" "}
             <a href="https://www.durapest.ca" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:text-white transition-colors font-medium">
-              Durapest
+              DuraPest
             </a>{" "}
             family of home services
           </p>
@@ -126,7 +126,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © {year} Durapest Powerwashing. All rights reserved.
+            © {year} DuraWash. All rights reserved.
           </p>
           <p className="text-slate-500 text-sm">
             Proudly serving Toronto & the GTA

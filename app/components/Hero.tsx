@@ -1,4 +1,4 @@
-function DurapestOval() {
+function DuraWashOval() {
   return (
     <svg viewBox="0 0 220 100" className="w-64 h-auto mx-auto lg:mx-0" aria-hidden>
       <ellipse cx="110" cy="50" rx="105" ry="44" fill="none" stroke="#dc2626" strokeWidth="6" />
@@ -14,7 +14,7 @@ function DurapestOval() {
         fill="#dc2626"
         letterSpacing="-0.5"
       >
-        Durapest
+        DuraWash
       </text>
     </svg>
   );
@@ -105,7 +105,7 @@ export default function Hero() {
         {/* Visual card */}
         <div className="flex-1 flex flex-col items-center lg:items-end gap-8">
           {/* Logo oval */}
-          <DurapestOval />
+          <DuraWashOval />
 
           {/* Info card */}
           <div className="relative w-full max-w-md">
