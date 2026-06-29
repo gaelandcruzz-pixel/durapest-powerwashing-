@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="bg-black border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto scrollbar-none py-1.5">
-            <span className="text-brand-red text-xs font-bold uppercase tracking-wider flex-shrink-0">Part of the Dura Group Family</span>
+            <span className="text-brand-blue text-xs font-bold uppercase tracking-wider flex-shrink-0">Part of the Dura Group Family</span>
             <span className="text-white/20 text-xs select-none flex-shrink-0">·</span>
             {sisterLinks.map(({ label, href, active }, i) => (
               <span key={label} className="flex items-center gap-2 flex-shrink-0">
@@ -39,7 +39,7 @@ export default function Navbar() {
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className={`text-xs transition-colors ${
                     active
-                      ? "text-brand-red font-semibold"
+                      ? "text-brand-blue font-semibold"
                       : "text-slate-400 hover:text-white"
                   }`}
                 >
@@ -52,7 +52,7 @@ export default function Navbar() {
                 href="tel:+19057826332"
                 className="flex items-center gap-1.5 text-xs text-slate-300 hover:text-white transition-colors font-medium"
               >
-                <svg className="w-3 h-3 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 (905) 782-6332
@@ -97,7 +97,7 @@ export default function Navbar() {
             {/* CTA */}
             <a
               href="#contact"
-              className="hidden md:inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+              className="hidden md:inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
             >
               Get a Free Quote
             </a>
@@ -139,7 +139,7 @@ export default function Navbar() {
               href="tel:+19057826332"
               className="flex items-center gap-2 text-gray-600 hover:text-brand-dark text-sm font-medium py-2 border-b border-gray-100"
             >
-              <svg className="w-4 h-4 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               (905) 782-6332
@@ -163,7 +163,7 @@ export default function Navbar() {
 
             <a
               href="#contact"
-              className="mt-3 inline-flex justify-center bg-brand-red hover:bg-brand-red-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+              className="mt-3 inline-flex justify-center bg-brand-blue hover:bg-brand-blue-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
               onClick={() => setOpen(false)}
             >
               Get a Free Quote

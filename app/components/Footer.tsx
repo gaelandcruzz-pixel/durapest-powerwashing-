@@ -1,24 +1,3 @@
-function DuraWashOval() {
-  return (
-    <svg viewBox="0 0 220 100" className="h-12 w-auto" aria-hidden>
-      <ellipse cx="110" cy="50" rx="105" ry="44" fill="none" stroke="#dc2626" strokeWidth="6" />
-      <ellipse cx="110" cy="50" rx="97" ry="36" fill="none" stroke="#333" strokeWidth="3.5" />
-      <ellipse cx="110" cy="50" rx="93" ry="32" fill="#1a1a1a" />
-      <text
-        x="110"
-        y="58"
-        textAnchor="middle"
-        fontFamily="Inter, Arial, sans-serif"
-        fontWeight="800"
-        fontSize="32"
-        fill="#dc2626"
-        letterSpacing="-0.5"
-      >
-        DuraWash
-      </text>
-    </svg>
-  );
-}
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -30,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <DuraWashOval />
+              <img src="/logos/durawash.png" alt="DuraWash" className="h-10 w-auto" />
               <span className="text-white font-bold text-base leading-tight">
                 Powerwashing
               </span>
@@ -40,7 +19,7 @@ export default function Footer() {
             </p>
             <a
               href="tel:+19057826332"
-              className="inline-flex items-center gap-2 text-brand-red hover:text-white text-sm font-medium transition-colors"
+              className="inline-flex items-center gap-2 text-brand-blue hover:text-white text-sm font-medium transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -105,7 +84,7 @@ export default function Footer() {
             <div className="mt-6">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-brand-red hover:bg-brand-red-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+                className="inline-flex items-center justify-center bg-brand-blue hover:bg-brand-blue-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
               >
                 Get a Free Quote
               </a>
@@ -117,7 +96,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 mb-6">
           <p className="text-slate-500 text-sm text-center">
             Part of the{" "}
-            <a href="https://www.durapest.ca" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:text-white transition-colors font-medium">
+            <a href="https://www.durapest.ca" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:text-white transition-colors font-medium">
               DuraPest
             </a>{" "}
             family of home services

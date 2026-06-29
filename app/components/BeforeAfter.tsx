@@ -150,7 +150,7 @@ function Slider({
         <span className="absolute top-3 left-3 bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-2.5 py-1 rounded-full pointer-events-none z-10">
           BEFORE
         </span>
-        <span className="absolute top-3 right-3 bg-brand-red text-white text-xs font-bold px-2.5 py-1 rounded-full pointer-events-none z-10">
+        <span className="absolute top-3 right-3 bg-brand-blue text-white text-xs font-bold px-2.5 py-1 rounded-full pointer-events-none z-10">
           AFTER
         </span>
 
@@ -176,7 +176,7 @@ export default function BeforeAfter() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block text-brand-red text-sm font-semibold uppercase tracking-widest mb-3">
+          <span className="inline-block text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">
             Results
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark mb-4">
@@ -196,7 +196,7 @@ export default function BeforeAfter() {
         <div className="mt-16 text-center">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-lg shadow-brand-red/25"
+            className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-dark text-white font-bold px-8 py-4 rounded-full text-lg transition-colors shadow-lg shadow-brand-blue/25"
           >
             Get These Results on Your Property
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

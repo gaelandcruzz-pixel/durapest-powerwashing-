@@ -68,7 +68,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block text-brand-red text-sm font-semibold uppercase tracking-widest mb-3">What We Do</span>
+          <span className="inline-block text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">What We Do</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark mb-4">
             Complete Powerwashing Services
           </h2>
@@ -82,14 +82,14 @@ export default function Services() {
           {services.map(({ icon, title, description, highlight }) => (
             <div
               key={title}
-              className="group relative bg-white border border-slate-100 rounded-2xl p-7 hover:shadow-xl hover:border-brand-red/30 transition-all duration-300"
+              className="group relative bg-white border border-slate-100 rounded-2xl p-7 hover:shadow-xl hover:border-brand-blue/30 transition-all duration-300"
             >
               {highlight && (
-                <span className="absolute top-4 right-4 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full">
+                <span className="absolute top-4 right-4 bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-full">
                   {highlight}
                 </span>
               )}
-              <div className="w-14 h-14 rounded-2xl bg-brand-tint text-brand-red flex items-center justify-center mb-5 group-hover:bg-brand-red group-hover:text-white transition-colors">
+              <div className="w-14 h-14 rounded-2xl bg-brand-tint text-brand-blue flex items-center justify-center mb-5 group-hover:bg-brand-blue group-hover:text-white transition-colors">
                 {icon}
               </div>
               <h3 className="text-brand-dark font-bold text-xl mb-3">{title}</h3>

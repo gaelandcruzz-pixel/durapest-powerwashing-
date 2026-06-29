@@ -62,7 +62,7 @@ export default function WhyUs() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-start">
           {/* Left: text */}
           <div className="mb-12 lg:mb-0">
-            <span className="inline-block text-brand-red text-sm font-semibold uppercase tracking-widest mb-3">Why Choose Us</span>
+            <span className="inline-block text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">Why Choose Us</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark mb-6">
               The DuraWash Difference
             </h2>
@@ -71,7 +71,7 @@ export default function WhyUs() {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white font-semibold px-7 py-3.5 rounded-full transition-colors"
+              className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-dark text-white font-semibold px-7 py-3.5 rounded-full transition-colors"
             >
               Book a Free Estimate
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@ export default function WhyUs() {
           <div className="grid sm:grid-cols-2 gap-6">
             {reasons.map(({ icon, title, description }) => (
               <div key={title} className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-brand-tint text-brand-red flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-brand-tint text-brand-blue flex items-center justify-center mb-4">
                   {icon}
                 </div>
                 <h3 className="text-brand-dark font-bold mb-2">{title}</h3>

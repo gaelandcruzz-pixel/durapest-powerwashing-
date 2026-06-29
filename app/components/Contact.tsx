@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="lg:grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
-            <span className="inline-block text-brand-red text-sm font-semibold uppercase tracking-widest mb-3">Get a Quote</span>
+            <span className="inline-block text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">Get a Quote</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark mb-6">
               Free Estimate — No Obligation
             </h2>
@@ -52,7 +52,7 @@ export default function Contact() {
                 },
               ].map(({ icon, label, value, href }) => (
                 <a key={label} href={href} className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-xl bg-brand-tint text-brand-red flex items-center justify-center flex-shrink-0 group-hover:bg-brand-red group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-brand-tint text-brand-blue flex items-center justify-center flex-shrink-0 group-hover:bg-brand-blue group-hover:text-white transition-colors">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {icon}
                     </svg>
@@ -74,7 +74,7 @@ export default function Contact() {
                 { value: "100%", label: "Satisfaction Rate" },
               ].map(({ value, label }) => (
                 <div key={label} className="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm">
-                  <p className="text-2xl font-extrabold text-brand-red">{value}</p>
+                  <p className="text-2xl font-extrabold text-brand-blue">{value}</p>
                   <p className="text-slate-500 text-xs mt-0.5">{label}</p>
                 </div>
               ))}
@@ -105,7 +105,7 @@ export default function Contact() {
                         type="text"
                         required
                         placeholder="John"
-                        className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:border-brand-red transition"
+                        className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:border-brand-blue transition"
                       />
                     </div>
                     <div>
@@ -114,7 +114,7 @@ export default function Contact() {
                         type="text"
                         required
                         placeholder="Smith"
-                        className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:border-brand-red transition"
+                        className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:border-brand-blue transition"
                       />
                     </div>
                   </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                       type="tel"
                       required
                       placeholder="(416) 000-0000"
-                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:border-brand-red transition"
+                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:border-brand-blue transition"
                     />
                   </div>
 
@@ -135,14 +135,14 @@ export default function Contact() {
                       type="email"
                       required
                       placeholder="john@example.com"
-                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:border-brand-red transition"
+                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:border-brand-blue transition"
                     />
                   </div>
 
                   <div>
                     <label className="block text-slate-600 text-sm font-medium mb-1.5">Service needed</label>
                     <select
-                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:border-brand-red transition bg-white"
+                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:border-brand-blue transition bg-white"
                     >
                       <option value="">Select a service…</option>
                       <option>House & Siding Wash</option>
@@ -160,13 +160,13 @@ export default function Contact() {
                     <textarea
                       rows={3}
                       placeholder="Size of area, address, any special requirements…"
-                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:border-brand-red transition resize-none"
+                      className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:border-brand-blue transition resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-brand-red hover:bg-brand-red-dark text-white font-bold py-4 rounded-xl text-base transition-colors shadow-lg shadow-brand-red/20"
+                    className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white font-bold py-4 rounded-xl text-base transition-colors shadow-lg shadow-brand-blue/20"
                   >
                     Send My Free Quote Request
                   </button>

@@ -5,7 +5,7 @@ const reviews = [
     rating: 5,
     text: "Absolutely amazing results on our driveway and house siding. Years of grime gone in a few hours. The team was professional, on time, and cleaned up everything. Will definitely be calling them again next spring!",
     initials: "SM",
-    color: "bg-brand-red",
+    color: "bg-brand-blue",
   },
   {
     name: "James K.",
@@ -21,7 +21,7 @@ const reviews = [
     rating: 5,
     text: "Had them do the full exterior — driveway, walkway, back patio, and siding. Our house looks like it was just built. Neighbours keep asking what we did! Highly recommend DuraWash to anyone in the GTA.",
     initials: "PT",
-    color: "bg-brand-red",
+    color: "bg-brand-blue",
   },
   {
     name: "Mike O.",
@@ -51,7 +51,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block text-brand-red text-sm font-semibold uppercase tracking-widest mb-3">Reviews</span>
+          <span className="inline-block text-brand-blue text-sm font-semibold uppercase tracking-widest mb-3">Reviews</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark mb-4">
             What Toronto Homeowners Say
           </h2>
