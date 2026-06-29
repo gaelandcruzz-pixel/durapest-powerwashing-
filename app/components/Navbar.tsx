@@ -6,8 +6,8 @@ import Image from "next/image";
 const sisterLinks = [
   { label: "Pest Control & Wildlife Removal", href: "https://www.durapest.ca" },
   { label: "Powerwashing", href: "/", active: true },
-  { label: "Junk Removal", href: "https://www.durapestjunkremoval.ca" },
-  { label: "Snow Removal", href: "https://www.durapestsnowremoval.ca" },
+  { label: "Junk Removal", href: "https://www.durajunk.ca" },
+  { label: "Snow Removal", href: "https://www.durasnow.ca" },
 ];
 
 const navLinks = [

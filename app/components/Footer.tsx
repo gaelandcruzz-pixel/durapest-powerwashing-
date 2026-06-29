@@ -94,8 +94,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@durapest.ca" className="text-slate-400 hover:text-white text-sm transition-colors">
-                  hello@durapest.ca
+                <a href="mailto:hello@durawash.ca" className="text-slate-400 hover:text-white text-sm transition-colors">
+                  hello@durawash.ca
                 </a>
               </li>
               <li className="text-slate-400 text-sm">Toronto, ON</li>
